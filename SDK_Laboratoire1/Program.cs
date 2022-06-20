@@ -1,50 +1,15 @@
 ﻿using LibrairieConvertionNote;
 
-   while (true)
-    {
-         string noteMusicale = "";
-         Console.WriteLine ("Entrez une note musicale entre A et G");
-         noteMusicale = Console.ReadLine();
-         
-        if (noteMusicale == 'A') 
-            {
-                Console.WriteLine("LA");
-  
-            }
+LibrairieDeNote Librairie = new LibrairieDeNote();
 
-         if (noteMusicale == 'B') 
-            {
-                Console.WriteLine("SI");
-            }
+do
+{
+        var noteMusicale = ""; 
+        Console.WriteLine("Entrez une note musicale entre A et G a convertir en note syllabique");
+        noteMusicale = Console.ReadLine();
+        string reponse = Librairie.Transformer(noteMusicale);
+        Console.WriteLine(reponse);
 
-         if (noteMusicale == 'C') 
-            {
-                Console.WriteLine("DO");
-            }
+}
 
-         if (noteMusicale == 'D') 
-            {
-                Console.WriteLine("RE");
-            }
-
-         if (noteMusicale == 'E') 
-            {
-                Console.WriteLine("MI");
-            }
-
-         if (noteMusicale == 'F') 
-            {
-                Console.WriteLine("FA");
-            }
-
-         if (noteMusicale == 'G') 
-            {
-                Console.WriteLine("SOL");
-            }
-
-         else 
-            {
-                Console.WriteLine("Entree invalide");
-            }
-             
-      }
+while (true);   

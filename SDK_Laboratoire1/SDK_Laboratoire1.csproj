@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LibrairieConvertionNote\LibrairieConvertionNote.csproj" />
+  </ItemGroup>
+
 </Project>
